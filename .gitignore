@@ -1,0 +1,27 @@
+# Node dependencies
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# System & logs
+npm-debug.log*
+yarn-error.log*
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+
+# Temp / Cache / Uploads
+uploads/
+.config/
+*.zip
+codepulse/node_modules/
+codepulse/.next/
+codepulse/data/

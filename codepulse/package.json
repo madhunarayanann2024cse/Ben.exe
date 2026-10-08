@@ -1,0 +1,31 @@
+{
+  "name": "codepulse",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CodePulse — AI Incident Memory & Root-Cause Intelligence. Your Engineering Team Never Forgets.",
+  "scripts": {
+    "dev": "next dev --turbopack -H 0.0.0.0 -p 3000",
+    "dev:webpack": "next dev -H 0.0.0.0 -p 3000",
+    "build": "next build",
+    "start": "next start -H 0.0.0.0 -p 3000",
+    "typecheck": "tsc --noEmit",
+    "seed": "curl -s -X POST http://localhost:3000/api/seed | head -c 400",
+    "verify": "node scripts/demo-flow.mjs",
+    "engine-check": "tsx scripts/engine-check.ts"
+  },
+  "dependencies": {
+    "next": "15.5.27",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
